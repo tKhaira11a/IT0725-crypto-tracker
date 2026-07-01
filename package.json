@@ -2,11 +2,11 @@
   "name": "crypto-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "type": "module",
   "scripts": {
     "live": "",
-    "dev": "node index.js",
+    "dev": "node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "parse-json": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   }
 }
