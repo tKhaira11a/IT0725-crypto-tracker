@@ -3,6 +3,7 @@ import type { Coin, Currency } from "./types.js";
 const BASE_URL = "https://api.coingecko.com/api/v3";
 
 // Type Guard: prüft zur Laufzeit, ob ein unbekannter Wert wirklich ein Coin ist
+// Rückgabe "Datentyp" ist bool + wenn true -> Cast. Also wir wissen damit, dass value Coin ist (vorher unknown)
 function isCoin(value: unknown): value is Coin {
     if (typeof value !== "object" || value === null) return false;
     const c = value as Record<string, unknown>;
